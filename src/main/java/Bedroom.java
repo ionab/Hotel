@@ -1,11 +1,10 @@
-import org.junit.Before;
-
 public class Bedroom extends Room {
     private BedroomTypes type;
     private int roomNum;
-    private int nightlyRate;
+    private double nightlyRate;
 
-    public Bedroom(int capacity, BedroomTypes type, int roomNum, int nightlyRate) {
+
+    public Bedroom(int capacity, BedroomTypes type, int roomNum, double nightlyRate) {
         super(capacity);
         this.type = type;
         this.roomNum = roomNum;
@@ -28,11 +27,11 @@ public class Bedroom extends Room {
         this.roomNum = roomNum;
     }
 
-    public int getNightlyRate() {
+    public double getNightlyRate() {
         return nightlyRate;
     }
 
-    public void setNightlyRate(int nightlyRate) {
+    public void setNightlyRate(double nightlyRate) {
         this.nightlyRate = nightlyRate;
     }
 
@@ -40,9 +39,9 @@ public class Bedroom extends Room {
         return capacity;
     }
 
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
-    }
+
+
+
 }
 
 

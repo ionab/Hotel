@@ -34,16 +34,20 @@ public class BedroomTest {
     }
     @Test
     public void cangetNightlyRate(){
-       assertEquals(77, bedroom.getNightlyRate());
+       assertEquals(77, bedroom.getNightlyRate(), 0.01);
     }
 
     @Test
     public void canchangeNightlyRate(){
        bedroom.setNightlyRate(99);
-       assertEquals(99, bedroom.getNightlyRate());
+       assertEquals(99, bedroom.getNightlyRate(), 0.01);
     }
     @Test
     public void cangetRoomCapacity(){
         assertEquals(2, bedroom.getCapacity());
+    }
+    @Test
+    public void roomStartsEmpty(){
+        assertEquals(0, bedroom.getGuests().size());
     }
 }

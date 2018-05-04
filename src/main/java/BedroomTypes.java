@@ -6,7 +6,7 @@ public enum BedroomTypes {
     FAMILY(4),
     ;
 
-    private final int capacity;
+    private int capacity;
     BedroomTypes(int capacity){
         this.capacity = capacity;
     }
