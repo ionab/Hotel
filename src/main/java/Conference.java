@@ -21,4 +21,6 @@ public class Conference extends Room {
     public void setDailyRate(double dailyRate) {
         this.dailyRate = dailyRate;
     }
+
+
 }

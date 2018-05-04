@@ -48,7 +48,7 @@ public class BedroomTest {
         assertEquals(2, bedroom.getCapacity());
     }
     @Test
-    public void roomStartsEmpty(){
+    public void bedroomStartsEmpty(){
         assertEquals(0, bedroom.getGuests().size());
     }
     @Test
@@ -63,4 +63,5 @@ public class BedroomTest {
         bedroom.removeGuest(guest);
         assertEquals(0, bedroom.getGuests().size());
     }
+
 }
