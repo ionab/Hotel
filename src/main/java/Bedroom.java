@@ -5,7 +5,8 @@ public class Bedroom extends Room {
     private int roomNum;
     private int nightlyRate;
 
-    public Bedroom(BedroomTypes type, int roomNum, int nightlyRate) {
+    public Bedroom(int capacity, BedroomTypes type, int roomNum, int nightlyRate) {
+        super(capacity);
         this.type = type;
         this.roomNum = roomNum;
         this.nightlyRate = nightlyRate;
@@ -34,4 +35,14 @@ public class Bedroom extends Room {
     public void setNightlyRate(int nightlyRate) {
         this.nightlyRate = nightlyRate;
     }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
 }
+
+

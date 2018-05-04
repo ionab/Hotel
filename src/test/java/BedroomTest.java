@@ -8,7 +8,7 @@ public class BedroomTest {
 
     @Before
     public void before() {
-        bedroom = new Bedroom(BedroomTypes.DOUBLE, 2, 77);
+        bedroom = new Bedroom(2, BedroomTypes.DOUBLE, 2, 77);
     }
 
     @Test
@@ -41,5 +41,9 @@ public class BedroomTest {
     public void canchangeNightlyRate(){
        bedroom.setNightlyRate(99);
        assertEquals(99, bedroom.getNightlyRate());
+    }
+    @Test
+    public void cangetRoomCapacity(){
+        assertEquals(2, bedroom.getCapacity());
     }
 }
