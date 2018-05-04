@@ -56,4 +56,11 @@ public class BedroomTest {
         bedroom.addGuest(guest);
         assertEquals(1, bedroom.getGuests().size());
     }
+    @Test
+    public void canRemoveGuestfromBedroom(){
+        bedroom.addGuest(guest);
+        assertEquals(1, bedroom.getGuests().size());
+        bedroom.removeGuest(guest);
+        assertEquals(0, bedroom.getGuests().size());
+    }
 }

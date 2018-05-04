@@ -24,13 +24,14 @@ public abstract class Room {
         return guests;
     }
 
-    public void setGuests(ArrayList<Guest> guests) {
-        this.guests = guests;
-    }
-
     public void addGuest(Guest guests){
         this.guests.add(guests);
     }
+
+    public void removeGuest(Guest guest){
+        this.guests.remove(guest);
+    }
+
 
 
 }
