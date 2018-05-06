@@ -14,6 +14,7 @@ public class Bedroom extends Room {
         this.roomNum = roomNum;
         this.nightlyRate = nightlyRate;
     }
+//    getters and setters below
 
     public BedroomTypes getType() {
         return type;

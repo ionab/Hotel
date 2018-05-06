@@ -6,6 +6,8 @@ public enum BedroomTypes {
     FAMILY(4),
     ;
 
+//    getters for capacity allows the capacity to be accessed in other classes
+
     private int capacity;
     BedroomTypes(int capacity){
         this.capacity = capacity;
