@@ -3,6 +3,8 @@ import java.util.ArrayList;
 public class Hotel {
     private ArrayList<Bedroom> bedrooms;
     private ArrayList<Conference> conferencerooms;
+    private Bedroom bedroom1;
+    private Guest guests;
 
     public Hotel(ArrayList<Bedroom> bedrooms, ArrayList<Conference> conferencerooms) {
         this.bedrooms = bedrooms;
@@ -24,5 +26,7 @@ public class Hotel {
     public void setConferencerooms(ArrayList<Conference> conferencerooms) {
         this.conferencerooms = conferencerooms;
     }
+
+
 }
 

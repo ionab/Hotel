@@ -1,15 +1,19 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class BedroomTest {
     Bedroom bedroom;
     Guest guest;
+    ArrayList<Guest> guests;
 
     @Before
     public void before() {
         bedroom = new Bedroom(2, BedroomTypes.DOUBLE, 2, 77);
+        guests = new ArrayList<>();
     }
 
     @Test
@@ -63,5 +67,15 @@ public class BedroomTest {
         bedroom.removeGuest(guest);
         assertEquals(0, bedroom.getGuests().size());
     }
+
+
+//    @Test
+//    public void canGetGuests(){
+//        bedroom.addGuest(guest);
+//        assertEquals(guests, bedroom.getGuests());
+//
+//    }
+
+
 
 }

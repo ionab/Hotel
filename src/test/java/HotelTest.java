@@ -10,6 +10,10 @@ public class HotelTest {
     Hotel hotel;
     ArrayList<Bedroom> bedrooms;
     ArrayList<Conference> conferencerooms;
+    Guest guest1;
+    Guest guest2;
+    ArrayList<Guest> guests;
+
 
 
     @Before
@@ -21,6 +25,7 @@ public class HotelTest {
         conferencerooms.add(new Conference(20, 200.00));
         conferencerooms.add(new Conference(20, 200.00));
         hotel = new Hotel(bedrooms, conferencerooms);
+        Guest guest2 = new Guest("Stewart");
 
     }
 
@@ -31,6 +36,13 @@ public class HotelTest {
     @Test
     public void conferenceroomsArrayHasSize() {
         assertEquals(2, hotel.getConferencerooms().size());
+    }
+
+    @Test
+    public void canGetGuests(){
+        Guest guest1 = new Guest("Kelsie");
+        bedrooms.get(0).addGuest(guest1);
+        assertEquals(guests, bedrooms.get(0).getGuests());
     }
 
 }

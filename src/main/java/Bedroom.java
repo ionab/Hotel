@@ -1,7 +1,11 @@
+import java.util.ArrayList;
+
 public class Bedroom extends Room {
     private BedroomTypes type;
     private int roomNum;
     private double nightlyRate;
+    private ArrayList<Guest> guests;
+
 
 
     public Bedroom(int capacity, BedroomTypes type, int roomNum, double nightlyRate) {
@@ -38,8 +42,6 @@ public class Bedroom extends Room {
     public int getCapacity() {
         return capacity;
     }
-
-
 
 
 }
